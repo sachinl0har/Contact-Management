@@ -10,7 +10,6 @@ string fname,lname,phone_num;
 // Functions
 void addContact();
 void searchContact();
-void help();
 void self_exit();
 bool check_digits(string);
 bool check_numbers(string);
@@ -21,7 +20,7 @@ int main()
     system("cls");
     system("color 0A");
     cout << "\n\n\n\t\t\tContact Management.";
-    cout << "\n\n\t1. Add Contact\n\t2. Search Contact\n\t3. Help\n\t4. Exit\n\t> ";
+    cout << "\n\n\t1. Add Contact\n\t2. Search Contact\n\t3. Exit\n\t> ";
     cin >> choice;
 
     switch(choice)
@@ -33,9 +32,6 @@ int main()
             searchContact();
             break;
         case 3:
-            help();
-            break;
-        case 4:
             self_exit();
             break;
         default:
@@ -54,10 +50,6 @@ void self_exit()
     exit(1);
 }
 
-void help()
-{
-    cout << "This displays help";
-}
 
 void addContact()
 {
